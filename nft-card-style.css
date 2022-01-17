@@ -28,7 +28,7 @@ main{
     width: 37.5rem;
     background-color: var(--dark-blue-cardbg);
     padding: 2.6rem;
-    border-radius: 1em;
+    border-radius: 1em;margin: 1rem;
 }
 .img-box{
     width: 100%;
@@ -44,7 +44,7 @@ main{
     width: 100%;
     transition: .5s ease;
     opacity: 0;
-    background-color: var(--Cyan);
+    background-color: hsla(178, 100%, 50%, 0.5);
     border-radius: 1em;
 }
 .content{
@@ -61,11 +61,10 @@ img{
     display: block;
 }
 .img-box:hover .box-content{
-    opacity: 0.5;
+    opacity: 1;
+    cursor: pointer;
 }
-.box-content:hover .content{
-    
-}
+
 /*transition effect end*/
 h1{
     color: var(--White);
@@ -102,7 +101,6 @@ p{
 .attribution { 
     font-size: 1.6rem; 
     text-align: center;
-    position: absolute;
     bottom: 0;
     width: 100%;
     height: 2.5rem; /* Footer height */
@@ -129,3 +127,13 @@ hr{
 span{
     color: var(--White);
 }
+h1:hover
+{
+    cursor: pointer;
+    color: var(--Cyan);
+}
+p span:hover
+    {
+        cursor: pointer;
+        color: var(--Cyan);
+    }
